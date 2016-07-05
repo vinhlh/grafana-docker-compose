@@ -4,5 +4,6 @@ services:
     image: grafana/grafana
     volumes:
       - ./etc:/etc/grafana
+      - ./aws-credentials:$HOME/.aws/credentials
     ports:
       - "3000:3000"
